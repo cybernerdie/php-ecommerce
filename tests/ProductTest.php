@@ -1,6 +1,6 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
+use App\Tests\TestCase;
 use App\Core\HttpClient;
 
 class ProductTest extends TestCase

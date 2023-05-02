@@ -1,13 +1,11 @@
 <?php
 
 use App\Core\HttpClient;
-use PHPUnit\Framework\TestCase;
+use App\Tests\TestCase;
 
 class OrderTest extends TestCase
 {
-    private $testToken;
-
-    protected function setUp(): void
+    public function setUp(): void
     {
         parent::setUp();
         $this->createTestData();
@@ -35,28 +33,5 @@ class OrderTest extends TestCase
 
         $this->assertEquals(201, $response['status']);
         $this->assertIsArray($response['data']);
-    }
-
-    private function createTestData()
-    {
-        $testUserData = [
-            'name' => 'Test User',
-            'email' => 'testing_user_' . uniqid() . '@example.com',
-            'password' => 'password',
-        ];
-
-        $client = new HttpClient();
-        $response = $client->post('/api/auth/register', $testUserData);
-        $token = $response['data']['token'];
-
-        $this->testToken = $token;
-
-        $productData = [
-            'product_id' => rand(1, 500),
-            'quantity' => 1,
-        ];
-
-        $client = new HttpClient();
-        $response = $client->post('/api/cart', $productData, $token);
     }
 }

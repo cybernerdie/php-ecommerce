@@ -1,19 +1,15 @@
 <?php
 
-use PHPUnit\Framework\TestCase;
+use App\Tests\TestCase;
 use App\Core\HttpClient;
 
 class AuthTest extends TestCase
 {
-    private $testUser;
-    private $testToken;
-
-    protected function setUp(): void
+    public function setUp(): void
     {
         parent::setUp();
         $this->createTestUser();
     }
-
     /**
      * @covers \App\Core\HttpClient::post
      */
@@ -62,22 +58,5 @@ class AuthTest extends TestCase
         $response = $client->post('/api/auth/logout', [],  $this->testToken);
 
         $this->assertEquals(200, $response['status']);
-    }
-
-    private function createTestUser()
-    {
-        $testUserData = [
-            'name' => 'Test User',
-            'email' => 'testing_user_' . uniqid() . '@example.com',
-            'password' => 'password',
-        ];
-
-        $client = new HttpClient();
-        $response = $client->post('/api/auth/register', $testUserData);
-        $user = $response['data']['user'];
-        $token = $response['data']['token'];
-
-        $this->testUser = $user;
-        $this->testToken = $token;
     }
 }
