@@ -1,5 +1,4 @@
-# php-ecommerce
-Ecommerce API with PHP
+# Ecommerce API with PHP
 
 # Project Setup
 
