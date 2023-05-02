@@ -20,14 +20,17 @@ Before starting, you need to have the following installed on your machine:
 
 1. Clone this repository to your local machine using `git clone`.
 
-2. Create a new MySQL database for your project.
+3. Install dependencies with `composer install`
 
-3. Update the database credentials in the `config.php` file with your own database credentials.
+4. Create a new MySQL database for your project.
+
+5. Create a `.env` file at the root of the project and add your database credentials in the following format:
 
 ```php
-define('DB_HOST', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'password');
-define('DB_NAME', 'database_name');
+DB_HOST=localhost
+DB_USERNAME=yourdatabaseusername
+DB_PASSWORD=yourdatabasepassword
+DB_NAME=yourdatabasename
+
 
 
