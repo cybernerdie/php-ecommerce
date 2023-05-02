@@ -19,7 +19,10 @@ Before starting, you need to have the following installed on your machine:
 git clone https://github.com/cybernerdie/php-ecommerce.git
 ```
 
-3. Install dependencies with `composer install`
+3. Install dependencies with 
+```php
+composer install
+```
 
 4. Create a new MySQL database for your project.
 
