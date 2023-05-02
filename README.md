@@ -14,7 +14,10 @@ Before starting, you need to have the following installed on your machine:
 
 ## Installation
 
-1. Clone this repository to your local machine using `git clone`
+1. Clone this repository to your local machine using 
+```php
+git clone https://github.com/cybernerdie/php-ecommerce.git
+```
 
 3. Install dependencies with `composer install`
 
