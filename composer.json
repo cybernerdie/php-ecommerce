@@ -1,0 +1,17 @@
+{
+    "autoload": {
+        "classmap": [
+            "./"
+        ],
+        "files": [
+            "core/Helpers/Helper.php",
+            "core/Helpers/AppConstants.php"
+        ]
+    },
+    "require": {
+        "illuminate/database": "^10.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.1"
+    }
+}
