@@ -14,7 +14,7 @@ Before starting, you need to have the following installed on your machine:
 
 ## Installation
 
-1. Clone this repository to your local machine using `git clone .`
+1. Clone this repository to your local machine using `git clone`
 
 3. Install dependencies with `composer install`
 
