@@ -28,5 +28,11 @@ DB_USERNAME=yourdatabaseusername
 DB_PASSWORD=yourdatabasepassword
 DB_NAME=yourdatabasename
 
+## Test 
+Run tests using PHPUnit:
+
+```php
+vendor/bin/phpunit
+
 
 
