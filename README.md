@@ -2,11 +2,7 @@
 
 # Project Setup
 
-This is a guide on how to set up the project with the following components:
-
-- Apache web server
-- PHP
-- MySQL
+This is a guide on how to set up the project
 
 ## Prerequisites
 
